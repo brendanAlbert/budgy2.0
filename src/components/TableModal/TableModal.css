@@ -42,10 +42,28 @@
     border-bottom: 1px dashed #5f8575;
 }
 
+.item-name-wrapper, .item-cost-wrapper {
+    cursor: pointer;
+}
+
 td {
     padding: 6px 6px;
 }
 
 .tr-header {
     border-bottom: 2px solid #5f8575;
+}
+
+.item-name {
+    border: 1px solid #242424;
+    cursor: pointer;
+}
+
+.tr:hover .item-name {
+    border: 1px solid #5f8575;
+}
+
+input {
+    font-size: 16px;
+    padding: 6px;
 }
