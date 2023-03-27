@@ -1,0 +1,51 @@
+.modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    z-index: 100;
+    width: 40%;
+    min-height: 600px;
+    border-radius: 10px;
+    background-color: #242424;
+}
+
+.upload-button {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    margin: 24px;
+}
+
+.mesa {
+    /* border-top: 2px solid #5f8575; */
+    margin-top: 12px;
+    border-collapse: collapse;
+}
+
+.tr {
+    border-bottom: 1px dashed #5f8575;
+}
+
+td {
+    padding: 6px 6px;
+}
+
+.tr-header {
+    border-bottom: 2px solid #5f8575;
+}

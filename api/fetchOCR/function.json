@@ -1,0 +1,12 @@
+{
+    "bindings": [
+        {
+            "type": "queueTrigger",
+            "direction": "in",
+            "name": "newReceipt",
+            "queueName": "receipt",
+            "connection": "VITE_RECEIPT_STORAGE_ACCOUNT"
+        }
+    ],
+    "scriptFile": "../dist/fetchOCR/index.js"
+}

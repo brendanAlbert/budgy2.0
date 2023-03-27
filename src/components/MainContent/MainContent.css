@@ -1,0 +1,69 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* width: 100%; */
+    flex-grow: 1;
+    /* min-width: 600px; */
+    /* min-height: 100vh; */
+    margin-top: 100px;
+    margin-left: 148px;
+    margin-right: 100px;
+}
+
+.column-wrapper {
+    display: grid;
+    /* width: 100%; */
+    /* margin-right: 48px; */
+    grid-template-areas: "left right";
+}
+
+@media (max-width: 700px) {
+    .column-wrapper {
+        grid-template-areas:
+            "left"
+            "right";
+    }
+}
+
+.left-column {
+    /* width: 100%; */
+    margin-right: 24px;
+    width: 400px;
+    min-height: 200px;
+    padding: 24px;
+    /* background-color: #5f8575; */
+    grid-area: left;
+    border-radius: 12px;
+}
+
+.right-column {
+    margin-right: 48px;
+    padding: 12px;
+    min-width: 100px;
+    min-height: 200px;
+    grid-area: right;
+    background-color: rgba(165, 42, 42, 0.058);
+    border-radius: 12px;
+}
+
+svg > path {
+    stroke: #fff;
+}
+
+.add-receipt-button {
+    border: 2px solid #1a1a1a;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-receipt-button:hover {
+    border: 2px solid #646cff;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-receipt-button:hover > svg > path {
+    /* stroke: #646cff;
+    fill: #646cff; */
+    transition: all 0.3s ease-in-out;
+}

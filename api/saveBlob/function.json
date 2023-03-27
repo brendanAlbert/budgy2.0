@@ -1,0 +1,33 @@
+{
+    "bindings": [
+        {
+            "authLevel": "anonymous",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": ["get", "post"]
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        },
+        {
+            "type": "queue",
+            "direction": "out",
+            "name": "newReceipt",
+            "queueName": "receipt",
+            "connection": "VITE_RECEIPT_STORAGE_ACCOUNT"
+        },
+        {
+            "name": "receiptDB",
+            "type": "cosmosDB",
+            "databaseName": "budgy2db",
+            "collectionName": "receipts",
+            "createIfNotExists": true,
+            "connectionStringSetting": "COSMOS_DB_CONNECTION_STRING",
+            "direction": "out"
+        }
+    ],
+    "scriptFile": "../dist/saveBlob/index.js"
+}

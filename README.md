@@ -9,3 +9,5 @@ App happy path:
 -   store receipt details in cosmos
     -   store ( Albertsons / Ralphs / Target / Trader Joes )
     -   who paid
+
+"scriptFile": "../dist/fetchOCR/index.js"

@@ -1,0 +1,16 @@
+.sidebar {
+    background-color: #333;
+    position: fixed;
+    /* margin-top: 48px; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    transition: all 0.2s ease-in-out;
+    z-index: 0;
+}
+
+.sidebar:hover {
+    transition: all 0.2s ease-in-out;
+    width: 140px;
+}

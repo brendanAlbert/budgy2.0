@@ -1,0 +1,11 @@
+.header {
+    background-color: #333;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    padding: 6px;
+    padding-left: 18px;
+    color: aliceblue;
+    z-index: 1;
+    top: 0;
+}
